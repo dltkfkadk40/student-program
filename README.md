@@ -1,11 +1,70 @@
-성적 관리 프로그램 
+학생 구조체
 
-1. 학생 성적 자동 입력  
-2. 학생 성적 출력
-3. 학생 성적 검색
-4. 학생 성적 수정
-5. 학생 성적 삭제
-6. 학생 성적 수동 입력
-7. 학생 성적 정렬(오름차순, 내림차순)
-8. 성적 프로그램 종료
-.
+struct student{
+
+    char name[10];
+    
+    int year;
+    
+    int number;
+    
+    int gender;
+    
+    int c;
+    
+    int java;
+    
+    int kotlin;
+    
+    int total;
+    
+    double avr;
+    
+    char grade;
+   
+    }
+    
+typedef struct student STU
+
+상수 
+
+#define MAX 100
+
+#define SUBJECT 3
+
+- name
+
+학생 이름의 의미
+
+10자리까지 입력
+
+- year
+
+학생 학년의 의미
+
+- number
+
+학생 학번의 의미
+
+- gender
+
+학생 성별의 의미
+
+- c , java , kotlin
+
+학생 과목점수의 의미
+
+- total , avr , grade
+
+학생 총점, 평균. 등급을 의미
+
+- get_score(student);
+
+학생의 정보를 랜덤값을 이용해 저장
+
+- compute_grade(double avr)
+
+평균값을 이용해 등급을 계산한다
+
+
+
